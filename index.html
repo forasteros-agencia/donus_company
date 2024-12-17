@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Informacion importante  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="author" content="">
+    <title>Don Us Company</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="icono.ico" />
+    <!-- Iconos Boostrap -->
+    <link href="css/flaticon.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="css/themify-icons.css" rel="stylesheet" />
+    <!-- Fuente Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <title>My web</title>
+    <!-- CSS Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Mi CSS -->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+        <!-- MENU NAV -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+            <div class="container px-5">
+                <a class="navbar-brand" href="index.html"><img class="logo logodona" src="img/logo_don_us.png"
+                        alt="Logo"></a>
+                <button class="navbar-toggler navbar-toggler-azul" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item sm-nav"><a class="nav-link" href="#cupones">Cupones</a></li>
+                        <li class="nav-item sm-nav"><a class="nav-link" href="#productos">Menú</a></li>
+                        <li class="nav-item sm-nav"><a class="nav-link" href="#pedidos">Pedidos</a></li>
+                        <li class="nav-item sm-nav"><a class="nav-link" href="#socios">Socios</a></li>
+                        <li class="submenu sm-nav">
+                            <img class="carrito-img resp-carrito" src="img/carrito-azul.png" id="img-carrito">
+                            <div id="carrito" class="carritoInner">
+                                <table id="lista-carrito" class="u-full-width">
+                                    <thead>
+                                        <tr>
+                                            <th class="sm-none">Imagen</th>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                            <th class="sm-none">Cantidad</th>
+                                            <th class="sm-none">Subtotal</th>
+                                            <th>Eliminar</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                                <p class="total-style text-center py-3 precioTotal">
+                                    <span id="precioTotal">0</span>
+                                </p>
+                                <a href="#" id="boton-vaciar" class="btn-secundary btn u-full-width">Vaciar Carrito</a>
+                                <a href="#" id="boton-comprar-carrito"
+                                    class="btn-primary btn u-full-width mt-2">Comprar</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- /// FIN MENU NAV -->
+        <!-- HEADER -->
+
+        <section id="hero">
+            <div class="hero-container" data-aos="fade-up" data-aos-delay="150">
+                <h2 class="d-none">Don Us Company</h2>
+                <div class="container align-items-center">
+                    <div class="row justify-content-center justify-content-md-between align-items-center">
+                        <div class="col-10 col-md-7 col-lg-5 py-3">
+                            <figure>
+                                <img src="img/logo_svg.svg" alt="Logo Don Us" class="img-fluid-esp logo-hero img-left">
+                            </figure>
+                        </div>
+                        <div class="col-8 col-md-5 col-lg-6 py-3">
+                            <figure>
+                                <img src="img/donas2.png" alt="Donas de Don Us Company" class="img-fluid-esp img-right">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center modal-btn">
+                        <!-- MODAL -->
+                        <button id="modal-btn" type="button" class="btn btn-primary btn-grande" class="btn btn-primary"
+                            data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            ¡Entra y sorpréndete!
+                        </button>
+
+                        <!--<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header title-blue">
+                                        <h5 class="modal-title" id="staticBackdropLabel">¡Gracias por ingresar!</h5>
+                                    </div>
+                                    <div class="modal-body texto-celeste">
+                                        En cortesía te dejamos una dona. Está en una caja naranja dentro de la viajera
+                                        :D
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-esp-azul"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        </header>
+        <!-- /// FIN HEADER -->
+        <!-- CUPONES -->
+        <section id="cupones" class="cupones">
+            <div class="container px-5 px-sm-0 mx-auto" data-aos="fade-up">
+                <div class="titulo-seccion pb-0">
+                    <h2 class="pb-0 mb-0">Cupones</h2>
+                    <p>Obtenelos presentando el código QR</p>
+                </div>
+
+
+                <div class="row justify-content-center d-none d-md-block">
+                    <div class="col-lg-12 cupones-web">
+                        <div class="container">
+                            <div class="row">
+                                <div class="cup-item col-md-4 col-6 d-flex align-items-stretch px-2 px-md-3 text-center"
+                                    data-aos="zoom-in" data-aos-delay="100">
+                                    <div class="div-cupones" data-toggle="modal" data-target="#promo">
+                                        <img src="img/promo1.jpg" alt="Obtener cupón" class="img-fluid">
+                                    </div>
+                                </div>
+
+                                <div class="cup-item col-md-4 col-6 d-flex align-items-stretch px-2 px-md-3 text-center"
+                                    data-aos="zoom-in" data-aos-delay="100">
+                                    <div class="div-cupones" data-toggle="modal" data-target="#promo">
+                                        <img src="img/promo2.jpg" alt="Obtener cupón" class="img-fluid">
+                                    </div>
+                                </div>
+
+                                <div class="cup-item col-md-4 col-6 d-flex align-items-stretch px-2 px-md-3 text-center"
+                                    data-aos="zoom-in" data-aos-delay="100">
+                                    <div class="div-cupones" data-toggle="modal" data-target="#promo">
+                                        <img src="img/promo3.jpg" alt="Obtener cupón" class="img-fluid">
+                                    </div>
+                                </div>
+
+                                <div class="cup-item col-md-4 col-6 d-flex align-items-stretch px-2 px-md-3 text-center"
+                                    data-aos="zoom-in" data-aos-delay="100">
+                                    <div class="div-cupones" data-toggle="modal" data-target="#promo">
+                                        <img src="img/promo4.jpg" alt="Obtener cupón" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="cup-item col-md-4 col-6 d-flex align-items-stretch px-2 px-md-3 text-center"
+                                    data-aos="zoom-in" data-aos-delay="100">
+                                    <div class="div-cupones" data-toggle="modal" data-target="#promo">
+                                        <img src="img/promo5.jpg" alt="Obtener cupón" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="cup-item col-md-4 col-6 d-flex align-items-stretch px-2 px-md-3 text-center"
+                                    data-aos="zoom-in" data-aos-delay="100">
+                                    <div class="div-cupones" data-toggle="modal" data-target="#promo">
+                                        <img src="img/promo6.jpg" alt="Obtener cupón" class="img-fluid">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row d-md-none">
+                    <div class="large-12 columns">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item cup-item">
+                                <div class="div-cupones" data-toggle="modal" data-target="#promo">
+                                    <img src="img/promo1.jpg" alt="Obtener cupón" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="item cup-item">
+                                <div class="div-cupones" data-toggle="modal" data-target="#promo">
+                                    <img src="img/promo2.jpg" alt="Obtener cupón" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="item cup-item">
+                                <div class="div-cupones" data-toggle="modal" data-target="#promo">
+                                    <img src="img/promo3.jpg" alt="Obtener cupón" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="item cup-item">
+                                <div class="div-cupones" data-toggle="modal" data-target="#promo">
+                                    <img src="img/promo4.jpg" alt="Obtener cupón" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="item cup-item">
+                                <div class="div-cupones" data-toggle="modal" data-target="#promo">
+                                    <img src="img/promo5.jpg" alt="Obtener cupón" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="item cup-item">
+                                <div class="div-cupones" data-toggle="modal" data-target="#promo">
+                                    <img src="img/promo6.jpg" alt="Obtener cupón" class="img-fluid">
+                                </div>
+                            </div>
+
+                            <script>
+                                $(document).ready(function () {
+                                    var owl = $('.owl-carousel');
+                                    owl.owlCarousel({
+                                        margin: 10,
+                                        nav: false,
+                                        loop: false,
+                                        dots: false,
+                                        responsive: {
+                                            0: {
+                                                items: 1
+                                            },
+                                            600: {
+                                                items: 3
+                                            },
+                                            1000: {
+                                                items: 5
+                                            }
+                                        }
+                                    })
+                                })
+
+                            </script>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- /// FIN CUPONES  -->
+        <!-- MODAL CUPONES -->
+        <div class="modal fade" id="promo" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content rounded">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="img/qr.png" alt="Obtener qr del cupón" class="img-fluid rounded">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- PRODUCTOS -->
+        <section id="productos" class="py-4 bg-light">
+            <div class="container px-5 my-5">
+                <div class="section-heading titulo-seccion">
+                    <h2 class="pb-0 mb-0">Donas</h2>
+                    <p>Explora nuestra deliciosa selección de donas y elige la que más te guste. </p>
+                </div>
+                <div id="lista-productos">
+                </div>
+            </div>
+        </section>
+        <!-- /// FIN PRODUCTOS -->
+        <!-- PEDIDOS -->
+        <section id="pedidos" class="pedidos">
+            <div class="container" data-aos="fade-up">
+                <div class="row justify-content-center justify-content-lg-between">
+                    <div
+                        class="col-lg-7 d-flex flex-column justify-content-center align-items-lg-stretch  order-2 order-lg-1">
+                        <div class="content mx-4 mx-md-0">
+                            <div class="titulo-seccion text-center pb-1 mb-0">
+                                <h2 class="pb-0 mb-0">Hacé tu pedido</h2>
+                            </div>
+                            <p class="text-center">
+                                Como vos querés, donde vos querés
+                            </p>
+                            <div class="bg-white div-pedidos mr-xl-5 mr-0 mt-5">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-10 col-sm-6 col-md-4 col-lg-4 pb-4">
+                                            <figure>
+                                                <img src="img/pedidosya.svg" alt="Logo Pedidos Ya" class="img-fluid">
+                                            </figure>
+                                        </div>
+                                        <div class="col-12 col-md-10 text-center">
+                                            <a href="https://www.pedidosya.com.ar/restaurantes/vicente-lopez/don-us-company---munro-menu"
+                                                class="btn btn-pedir">Hacer pedido</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4 align-items-center order-2 img pt-5 d-none d-lg-block">
+                        <figure><img src="img/donas2.png" alt="Donas de Don Us Company" class="img-fluid">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/// FIN PEDIDOS  -->
+        <!-- SOCIOS -->
+        <section id="socios" class="socios">
+            <div class="container" data-aos="fade-up">
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 align-items-center d-none d-lg-block img-tar" data-aos="fade-right"
+                        data-aos-delay="100">
+                        <img src="img/tarjeta.png" class="img-fluid" alt="Tarjeta de socio de Don Us">
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0 content p-esp cont-socios" data-aos="fade-left"
+                        data-aos-delay="100">
+                        <div class="text-center">
+                            <h2>Don Us Company CLUB</h2>
+                            <p>Qué es?</p>
+
+                            <p class="font-italic mbesp">
+                                Es un club de beneficios donde a través de un tarjeta van a poder sumar puntos con cada
+                                compra que realicen para canjear por premios y beneficios, tener descuentos exclusivos
+                                todas
+                                las semanas, participar por sorteos exclusivos y muchas sorpresas más!
+                            </p>
+                            <h4>Cómo me hago miembro?</h4>
+                        </div>
+                        <div class="text-left mlesp-1">
+                            <p><strong><span style="color: #37517e;">1- </span></strong>Acercate a alguna de
+                                nuestras
+                                sucursales</p>
+                            <p><strong><span style="color: #37517e;"> 2-</span> </strong>Completá los datos</p>
+                            <p><strong><span style="color: #37517e;">3-</span></strong> ¡Listo! Disfruta de tu
+                                tarjeta
+                                Don Us</p>
+                        </div>
+                    </div>
+                    <div class="col-8 col-lg-6 d-flex align-items-center d-lg-none tarj-img" data-aos="fade-right"
+                        data-aos-delay="100">
+                        <picture class="img-fluid">
+                            <source media="(max-width:768px)" srcset="img/tarjeta2.png">
+                            <img src="img/tarjeta.png" class="d-block w-100 img-fluid"
+                                alt="Tarjeta de socio de Don Us Company">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /// FIN SOCIOS -->
+        <!-- APP -->
+        <section class="pedidos fondo-seccion" id="app">
+            <div class="container" data-aos="fade-up">
+                <div class="row justify-content-center justify-content-lg-between">
+                    <div
+                        class="col-md-7 d-flex flex-column justify-content-center align-items-md-stretch  order-2 order-lg-1">
+                        <div class="content text-center mx-4 mx-md-0">
+                            <div class="titulo-seccion pb-1 mb-0">
+                                <h2 class="pb-0 mb-0">Descubrí la app</h2>
+                            </div>
+                            <p>
+                                Agregá esta página a tu pantalla de inicio desde tu navegador en Opciones ->
+                                Instalar
+                                aplicacion
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-4 align-items-center order-2 img pt-5 mockup text-center img-app">
+                        <figure><img src="img/mockup.png" alt="Instala la app de Don Us Company" class="img-fluid">
+                        </figure>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- /// FIN APP -->
+        <!-- ARRIBA -->
+        <div class="go-top">
+            <i class="flaticon-up-arrow flaticon-arow"></i>
+        </div>
+        <!-- /// FIN ARRIBA -->
+        <div class="alertasContainer">
+        </div>
+        <!-- /// FIN REDES Y SUSUCRIBITE -->
+    </main>
+    <!-- FOOTER -->
+    <footer class="bg-dark py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto">
+                    <div class="small m-0 text-white">Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- /// FIN FOOTER -->
+    <!-- Sweetalert JS-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src=" https://unpkg.com/sweetalert/dist/sweetalert.min.js "></script>
+
+    <!-- jQuery -->
+    <script src="js/jQuery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Mi JS -->
+    <script src="js/productos.js"></script>
+    <script src="js/scripts.js"></script>
+     <!-- Bootstrap JS-->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
