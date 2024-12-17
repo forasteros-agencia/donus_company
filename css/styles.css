@@ -26,15 +26,25 @@
 
 .logo {
   width: 100% !important;
+  height: auto !important;
+}
+
+.logo-esp img {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
 }
 
 .logodona {
-  max-height: 80px !important;
+  max-height: 90px; /* Ajusta según el diseño */
+  max-width: 127px; /* Proporción fija para evitar distorsión */
+  height: 90px !important;
+  width: 127px !important;
 }
 
 .navbar-brand {
-  padding-top: 0.1rem;
-  padding-bottom: 0.1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .nav-item {
