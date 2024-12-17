@@ -190,6 +190,12 @@
   border-color: #212529;
 }
 
+.btn-grande {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
 
 .btn-check:focus+.btn-primary,
 .btn-primary:focus {
