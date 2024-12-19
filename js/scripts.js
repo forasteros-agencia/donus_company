@@ -299,7 +299,7 @@ function btnInicio(e) {
 	e.preventDefault
 	swal({
 		title: "Gracias por ingresar",
-		text: "En cortesía te dejamos una dona. Está en una caja celeste dentro de la viajera :D",
+		text: "En cortesía te dejamos un regalo. Está en una caja celeste dentro de la viajera :D",
 		dangerMode: true,
 	})
 }
